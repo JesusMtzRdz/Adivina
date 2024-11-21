@@ -1,0 +1,52 @@
+<ion-content class="ion-padding">
+  <div class="menu-container">
+    <!-- Título Principal -->
+    <div class="header-container">
+      <ion-text class="ion-text-center" color="primary">
+        <h1><strong>ADIVINA EL NÚMERO</strong></h1>
+      </ion-text>
+      <ion-text class="ion-text-center">Bienvenido, Jesús Martínez</ion-text>
+    </div>
+
+    <!-- Cuadrícula de Opciones -->
+    <ion-grid>
+      <ion-row justify-content-center>
+        <!-- Opción Jugar -->
+        <ion-col size="15" size-md="4">
+          <ion-card class="menu-option" mode="ios" routerLink="/game" color="warning">
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon slot="start" name="play-circle"></ion-icon>
+                Jugar
+              </ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+        <!-- Opción Ranking -->
+        <ion-col size="12" size-md="4">
+          <ion-card class="menu-option" mode="ios" routerLink="/leaderboard" color="red">
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon slot="start" name="trophy"></ion-icon>
+                Ranking
+              </ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+
+        <!-- Opción Salir -->
+        <ion-col size="12" size-md="4">
+          <ion-card class="menu-option" mode="ios" routerLink="/login" color="dark">
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon slot="start" name="log-out"></ion-icon>
+                Salir
+              </ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

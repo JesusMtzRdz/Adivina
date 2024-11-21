@@ -1,0 +1,67 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+    padding: 20px; /* Agregar algo de espacio en los bordes */
+  }
+  
+  .menu-option {
+    width: 80%; /* Ajustar al 80% del contenedor para que sea más flexible */
+    max-width: 300px; /* Establecer un máximo para que no se haga muy grande */
+    height: 125px;
+    margin-bottom: 20px; /* Espaciado entre las tarjetas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Efecto hover */
+  }
+  
+  .menu-option:hover {
+    transform: translateY(-5px); /* Levantar la tarjeta ligeramente */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada */
+  }
+  
+  ion-card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  ion-card-title {
+    font-size: 1.2rem; /* Aumentar el tamaño de la fuente */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  ion-card-title ion-icon {
+    margin-right: 10px; /* Espaciado entre el ícono y el texto */
+  }
+  
+  ion-text h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  ion-text {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+  
+  .menu-container {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Animación de desvanecimiento */
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
